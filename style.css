@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .container a {
+    color: #00CCDD;
+    text-decoration: none;
+  }
+  
+  .container a:hover {
+    text-decoration: underline;
+  }
+  
+/* Copy and download button styles */
+.copy-btn, .download-btn {
+    background-color: #00CCDD;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .copy-btn:hover, .download-btn:hover {
+    background-color: #008C9E;
+  }
+  
+  /* Code block container */
+  .code-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  code {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #d63384;
+    margin-right: 10px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .container p {
+      font-size: 0.9rem;
+    }
+  
+    code {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      padding: 10px;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  
+    .container p {
+      font-size: 0.85rem;
+    }
+  
+    code {
+      font-size: 0.8rem;
+    }
+  }
+  

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue qo`llanma</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <p><i class="fas fa-terminal"></i> VS Code terminalida Vite yordamida Vue loyihasini yaratish uchun quyidagi amallarni bajaring:</p>
+
+        <p><i class="fas fa-download"></i> Node.js va npm o'rnatilganligini tekshirish: Agar sizda hali Node.js o'rnatilmagan bo'lsa, rasmiy saytdan o'rnating: 
+            <a href="https://nodejs.org/"><i class="fas fa-external-link-alt"></i> https://nodejs.org/</a>
+            Terminalda quyidagi buyruqlar bilan tekshiring:
+        </p>
+
+        <!-- Copy Code Block -->
+        <div class="code-block">
+            <code><i class="fas fa-code"></i> node -v<br>npm -v</code>
+            <button class="copy-btn" onclick="copyText('node -v\nnpm -v')">Nusxa olish <i class="fas fa-copy"></i></button>
+        </div>
+
+        <p><i class="fas fa-project-diagram"></i> Vite bilan yangi Vue loyihasini yaratish: Terminalda quyidagi buyruqni kiriting:</p>
+
+        <!-- Copy Code Block -->
+        <div class="code-block">
+            <code><i class="fas fa-file-code"></i> npm create vite@latest my-vue-project</code>
+            <button class="copy-btn" onclick="copyText('npm create vite@latest my-vue-project')">Nusxa olish <i class="fas fa-copy"></i></button>
+        </div>
+
+        <p><i class="fas fa-folder-open"></i> Loyihaga kirish: Loyiha yaratilib bo'lgandan so'ng, yangi loyihangiz katalogiga o'ting:</p>
+
+        <!-- Copy Code Block -->
+        <div class="code-block">
+            <code><i class="fas fa-folder"></i> cd my-vue-project</code>
+            <button class="copy-btn" onclick="copyText('cd my-vue-project')">Nusxa olish <i class="fas fa-copy"></i></button>
+        </div>
+
+        <p><i class="fas fa-play"></i> Loyihani ishga tushirish: Loyiha paketlarini o'rnating va keyin serverni ishga tushiring:</p>
+
+        <!-- Copy Code Block -->
+        <div class="code-block">
+            <code><i class="fas fa-cogs"></i> npm install<br><i class="fas fa-play-circle"></i> npm run dev</code>
+            <button class="copy-btn" onclick="copyText('npm install\nnpm run dev')">Nusxa olish <i class="fas fa-copy"></i></button>
+        </div>
+
+        <p><i class="fas fa-code"></i> VS Code-da loyihani ochish: Loyiha katalogida turib VS Code'ni ochish uchun quyidagi buyruqni kiriting:</p>
+
+        <!-- Copy Code Block -->
+        <div class="code-block">
+            <code><i class="fas fa-code"></i> code .</code>
+            <button class="copy-btn" onclick="copyText('code .')">Nusxa olish <i class="fas fa-copy"></i></button>
+        </div>
+
+        <!-- Download Button -->
+        <button class="download-btn" onclick="downloadTextFile()">Yuklab olish <i class="fas fa-download"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
